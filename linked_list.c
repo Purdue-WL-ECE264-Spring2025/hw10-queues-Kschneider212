@@ -66,8 +66,6 @@ size_t remove_from_tail(struct linked_list *list) {
     free(cur);
     return value;
 }
-
-// Corrected the definition here by removing the pointer (*) to match the header file declaration
 void free_list(struct linked_list list) {
     struct list_node *cur = list.head;
     while (cur) {
